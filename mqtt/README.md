@@ -125,7 +125,7 @@ int dsdMqttUnsubscribe(String topic);
  * @param  content    话题内容
  * @param  contentLen 话题内容长度
  * @param  qos        服务质量，0|1|2
- * @param  retained   如果设置为true，最新发布的消息会保留到服务器中，如果有新的订阅者订阅了该话题，则把该话题发布给新的订阅者。
+ * @param  retained   如果设置为true，最新发布的消息会保留到服务器中，如果有新的订阅者订阅了该话题，服务器会把该话题发布给新的订阅者。
  * @return      成功:0,失败:-1
  */
 int dsdMqttPublish(String topicName, String content, int contentLen, int qos, boolean retained);
@@ -149,4 +149,4 @@ int dsdMqttGetSubList();
 int dsdMqttDisconnect();
 ```
 ## 下载Android示例程序
-[下载Android示例程序](https://www.github.com/Dasudian/imsdk-example-android)
+[下载Android示例程序](https://www.github.com/Dasudian/mqttsdk-example-android)
